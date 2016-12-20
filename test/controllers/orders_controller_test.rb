@@ -17,11 +17,6 @@ class OrdersControllerTest < ActionController::TestCase
     assert_equal flash[:notice], 'Your cart is empty'
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   test "should create order" do
     assert_difference('Order.count') do
       post :create, order: { address: @order.address, email: @order.email,
