@@ -1,0 +1,55 @@
+ru:
+  layouts:
+    application:
+      title: "Книжный магазин"
+      home: "Домой"
+      questions: "Вопросы"
+      news: "Новости"
+      contact: "Контакты"
+  store:
+    index:
+      title_html: "Книжный каталог"
+      add_html: "Добавить в корзину"
+  carts:
+      cart:
+        title: "Ваша корзина"
+        empty: "Очистить"
+        checkout: "Заказать"
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
+  orders:
+      new:
+        legend: "Пожалуйста, введите необходимую информацию"
+      form:
+        name: "Имя"
+        address_html: "Адрес"
+        email: "E-mail"
+        pay_type: "Тип оплаты"
+        pay_prompt_html: "Выберите способ оплаты"
+        submit: "Разместить заказ"
+  errors:
+    template:
+      body: "Возникли следующие ошибки:"
+      header:
+        one: "Возникла 1 ошибка в %{model}"
+        other: "%{count} ошибки возникло в %{model}"
+  activerecord:
+    models:
+      order: "заказе"
+    attributes:
+      order:
+        address: "Поле Адрес"
+        name: "Поле Имя"
+        email: "Поле E-mail"
+        pay_type: "Тип оплаты"
+    errors:
+          messages:
+            inclusion: "не выбран"
+            blank: "не заполнено"
+  thanks: "Спасибо за Ваш заказ"
